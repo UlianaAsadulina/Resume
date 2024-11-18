@@ -3,10 +3,13 @@
 @media only screen and (max-width: 480px) {
     body {
         font-family: sans-serif;
+        background-color: #898989;
+        color: white;
     }
 
     .personContainer {
-        border-top, border-bottom: 2px solid #898989;
+        border-top: solid white;
+        border-bottom: solid white;
 
     }
 
@@ -24,15 +27,14 @@
     }
 
     .centerContainer{
-        border: solid gray;
+        
         width: 100%;
         height: 100%;
         
     }
         
     .leftBar {
-        /* border: solid blue; */        
-        /* color: white; */
+        
         width: 100%;
         margin: 10px;
         padding: 10px;        
@@ -41,13 +43,10 @@
     
     .photoContainer {     
         display: none !important; 
-        content: none;
+        
     }
 
-    img {
-        display: none !important;
-    }
-    
+        
     .langContainer {
         display: none;
     }
@@ -65,8 +64,8 @@
     }
     
     .myContainer {
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
     }
     
     
@@ -96,14 +95,154 @@
 
 }
 
+ /* --------------------------- */
 
-/* iPads and Tablets 
-@media only screen and (481px <= width <=768px) {...}
-/* Small screen, laptops  */
-/* @media only screen and (769px <= width <=1024px) {} */
+/* iPads and Tablets */
+@media only screen and (481px <= width <=768px) {
+    body {
+        font-family: sans-serif;
+    }
 
-/* Large screen, desktops  */
-@media only screen and (min-width: 1025px) {
+    .headContainer{
+        display: flex; 
+        flex-wrap: wrap;
+    }
+
+    .photoContainer, .personContainer, contactContainer {
+        /* width: 33%; */
+        justify-content: flex-start;
+        
+    }
+
+    .nameContainer {
+        padding: 10px;
+        font-size: 16pt;
+        font-weight: bold;
+        justify-content: center;
+    }
+
+    .positionContainer {
+        padding: 10px;
+        font-size: 14pt;
+        
+        
+    }
+
+    .locationContainer{
+        padding: 10px;
+        font-size: 10pt;
+        font-weight: normal;
+        font-style: italic;
+
+    }
+
+    .contactContainer {
+        margin: 20px;
+        padding: 20px;
+        color: white;
+        background-color: #898989;
+        border: 1px double white;
+    }
+
+    .introContainer {
+        margin: 10px;
+        padding: 10px;
+        font-size: 14pt;
+        font-style: italic;
+        color: #898989;
+    }
+
+
+    .centerContainer{
+        border: solid gray;
+        /* display: flex; */
+        width: 100%;
+        height: 100%;
+        
+    }
+
+
+    .leftBar {
+        margin: 10px;
+        padding: 10px;
+        
+        align-content: center;
+    }
+
+    .photoContainer > img {     
+        border: 2px solid white;   
+        border-radius: 50%;  
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        object-position: 50% 50%;    
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+
+
+    .infoContainer{
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        
+    }
+
+    .titleContainer {
+        font-size: 20pt;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .edContainer {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 10px;
+        background-color: #898989;
+        color: white;
+    }
+
+    .expContainer {
+        width: 95%;
+    }
+
+    .placeContainer{
+       
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titleContainer, univContainer {
+        width: 70%;
+    }
+
+    .companyContainer {
+        margin: 10px;
+        padding-right: 20px;
+        
+    }
+
+    .jobContainer {
+        font-size: 16pt;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .dateContainer {
+        justify-content: flex-end;
+        width: 30%;
+    }
+}
+
+/* ----------------------------------------- */
+
+/* Screen, desktops  */
+@media only screen and (min-width: 769px) {
     body {
         font-family: sans-serif;
     }
@@ -157,7 +296,7 @@
 
 
     .leftBar {
-        border: solid blue;
+       
         background-color: #898989;
         color: white;
         width: 27%;
@@ -181,7 +320,7 @@
 
 
     .infoContainer{
-        border: solid green;
+        
         width: 72%;
         margin: 10px;
         padding: 10px;
@@ -204,7 +343,7 @@
 
 
     .placeContainer{
-        /* border: solid black; */
+        
         margin: 10px;
         display: flex;
         justify-content: space-between;
