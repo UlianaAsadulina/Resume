@@ -1,67 +1,213 @@
 
-
-.mainContainer{
-    border: solid gray;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    font-family: sans-serif;
-}
-
-
-.navBar {
-    border: solid blue;
-    background-color: #898989;
-    color: white;
-    width: 27%;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
-.logoContainer > img {     
-    border: 2px solid white;   
-    border-radius: 50%; 
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    object-position: 50% 50%;    
-}
-/* 
-.menuLeft{
-    list-style: none;
-    border: solid red;
-    padding: 10px;
-}  */
-
-
-.infoContainer{
-    border: solid green;
-    width: 72%;
-    margin: 10px;
-    padding: 10px;
+/* Mobile devices */
+@media only screen and (max-width: 480px) {
+    .centerContainer{
+        border: solid gray;
+        width: 100%;
+        height: 100%;
+        font-family: sans-serif;
+    }
     
-}
-
-.placeContainer{
-    /* border: solid black; */
-    margin: 10px;
-    display: flex;
-}
-
-.titleContainer {
-    width: 50%;
-}
-
-.companyContainer {
-    margin: 10px;
-    padding-right: 20px;
     
+    .leftBar {
+        border: solid blue;
+        background-color: #898989;
+        color: white;
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        
+        align-content: center;
+    }
+    
+    .photoContainer {     
+        display: none; 
+    }
+
+    img {
+        display: none !important;
+    }
+    
+    .langContainer h2, p {
+        display: none;
+    }
+    
+    .infoContainer{
+        border: solid green;
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        
+    }
+    
+    .myContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .placeContainer{
+        /* border: solid black; */
+        margin: 10px;
+        display: flex;
+    }
+    
+    .titleContainer {
+        width: 70%;
+    }
+    
+    .companyContainer {
+        margin: 10px;
+        padding-right: 20px;
+        
+    }
+    
+    .dateContainer {
+        justify-content: flex-end;
+    }
+
+    .softContainer {
+        display: none;
+    }
+
+    .softContainer h2 {
+        display: none;
+    }
 }
 
-.dateContainer {
-    justify-content: flex-end;
+
+/* iPads and Tablets 
+@media only screen and (481px <= width <=768px) {...}
+/* Small screen, laptops  */
+/* @media only screen and (769px <= width <=1024px) {} */
+
+/* Large screen, desktops  */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-family: sans-serif;
+    }
+
+    .headContainer{
+        display: flex;
+    }
+
+    .photoContainer, .personContainer, contactContainer {
+        width: 33%;
+        justify-content: flex-start;
+    }
+
+    .nameContainer {
+        padding: 20px;
+        font-size: 20pt;
+        font-weight: bold;
+    }
+
+    .positionContainer {
+        padding: 20px;
+        font-size: 14pt;
+        
+    }
+
+    .locationContainer{
+        padding: 20px;
+        font-size: 11pt;
+        font-weight: normal;
+        font-style: italic;
+
+    }
+
+    .contactContainer {
+        padding-top: 20px;
+    }
+
+    .introContainer {
+        margin: 10px;
+        padding: 10px;
+    }
+
+
+    .centerContainer{
+        border: solid gray;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+
+    .leftBar {
+        border: solid blue;
+        background-color: #898989;
+        color: white;
+        width: 27%;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .photoContainer > img {     
+        border: 2px solid white;   
+        border-radius: 50%; 
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        object-position: 50% 50%;    
+    }
+
+
+
+    .infoContainer{
+        border: solid green;
+        width: 72%;
+        margin: 10px;
+        padding: 10px;
+        
+    }
+
+    .titleContainer {
+        font-size: 20pt;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .edContainer {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 10px;
+    }
+
+
+    .placeContainer{
+        /* border: solid black; */
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titleContainer, univContainer {
+        width: 70%;
+    }
+
+    .companyContainer {
+        margin: 10px;
+        padding-right: 20px;
+        
+    }
+
+    .jobContainer {
+        font-size: 16pt;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .dateContainer {
+        justify-content: flex-end;
+        width: 30%;
+    }
+
 }
